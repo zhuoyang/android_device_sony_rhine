@@ -159,6 +159,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     keystore.msm8994
 
+# PowerHAL
+PRODUCT_PACKAGES += \
+     power.rhine
+		 
 # Misc
 PRODUCT_PACKAGES += \
     libmiscta \
