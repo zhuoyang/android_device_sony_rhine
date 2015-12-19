@@ -68,7 +68,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.midi.xml:system/etc/permissions/android.software.midi.xml
 
 PRODUCT_COPY_FILES += \
-    $(SONY_ROOT)/system/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     $(SONY_ROOT)/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
     $(SONY_ROOT)/system/etc/media_codecs.xml:system/etc/media_codecs.xml \
     $(SONY_ROOT)/system/etc/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
@@ -76,6 +75,7 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
+#    $(SONY_ROOT)/system/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -162,7 +162,7 @@ PRODUCT_PACKAGES += \
 # PowerHAL
 PRODUCT_PACKAGES += \
      power.rhine
-		 
+
 # Misc
 PRODUCT_PACKAGES += \
     libmiscta \
