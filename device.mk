@@ -178,10 +178,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rmt_storage
 
-# Recovery
-PRODUCT_PACKAGES += \
-    init.sh
-
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
