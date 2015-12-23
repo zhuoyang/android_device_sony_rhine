@@ -12,11 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
- SONY_ROOT = device/sony/rhine/rootdir
-
- PRODUCT_COPY_FILES += \
-     $(SONY_ROOT)/init.rhine.qc.rc:root/init.rhine.qc.rc
-
 # ANT+
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml
@@ -26,20 +21,11 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library \
     libantradio
 
-# Bootimg tools
-PRODUCT_PACKAGES += \
-    extract_elf_ramdisk
-
-# QC Perf
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qualcomm.perf.cores_online=2 \
-    ro.vendor.extension_library=libqti-perfd-client.so
-
-# Recovery
-PRODUCT_PACKAGES += \
-    keycheck \
-    setup_fs
-
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnGSMDevice=1
+
+# Recovery
+PRODUCT_PACKAGES += \
+    dtbToolCM \
+    init.sh
