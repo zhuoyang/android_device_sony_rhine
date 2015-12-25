@@ -38,7 +38,7 @@ BOARD_RAMDISK_OFFSET     := 0x02000000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 #BOARD_MKBOOTIMG_ARGS += --dt_dir $(OUT)/dtbs
 
-BOARD_KERNEL_CMDLINE := androidboot.hardware=rhine androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := androidboot.hardware=rhine
 BOARD_KERNEL_CMDLINE += user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 lpj=192598
 BOARD_KERNEL_CMDLINE += dwc3.maximum_speed=high dwc3_msm.prop_chg_detect=Y
 BOARD_KERNEL_CMDLINE += console=ttyHSL0,115200,n8
