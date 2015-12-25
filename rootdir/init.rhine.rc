@@ -14,7 +14,6 @@
 
 import init.rhine.usb.rc
 import init.rhine.pwr.rc
-import init.rhine.qc.rc
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug
